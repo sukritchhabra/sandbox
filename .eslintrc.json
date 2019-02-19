@@ -1,0 +1,39 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+
+  "extends": [
+    "airbnb"
+  ],
+
+  "parserOptions": {
+    "ecmaFeatures": {
+        "experimentalObjectRestSpread": true,
+        "jsx": true
+      },
+    "sourceType": "module"
+  },
+
+  "plugins": [
+    "react"
+  ],
+
+  "rules": {
+    "comma-dangle": ["error", "only-multiline"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"]
+  },
+
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  }
+}
